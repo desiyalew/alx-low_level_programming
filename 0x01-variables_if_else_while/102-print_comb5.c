@@ -1,4 +1,5 @@
-#include <studio.h>
+#include <stdio.h>
+
 /**
  * main - a simple program that outputs unordered
  * combinations of two digits integers without duplicates
