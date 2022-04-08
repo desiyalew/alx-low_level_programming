@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - a simple program that prints out the lowercase alphabet 
+ * main -a simple program that prints out the lowercase alphabet
  *
  * Return: 0 on completion
  **/
