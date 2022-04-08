@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * this is the 3rd c program 
+ * main - a simple program that prints out the lowercase alphabet 
  *
+ * Return: 0 on completion
  */
 int main(void)
 {
@@ -11,6 +13,5 @@ int main(void)
 	for (low ='a'; low <= 'z';low++)
 		putchar(low);
 	print("\n");
-	
 	return (0);
 }
