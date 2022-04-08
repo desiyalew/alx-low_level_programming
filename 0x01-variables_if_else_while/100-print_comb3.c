@@ -8,18 +8,20 @@
  */
 int main(void)
 {
-int d;
-for (d = 0; d < 90; d++)
+int i;
+int j;
+
+for (i = 48; i < 57; i++)
 {
-for ()
+for (j = i +1; j < 58; j++)
 {
-putchar((d / 10) + '0');
-putchar((d % 10) + '0');
-}
-if (d != 89)
+putchar(i);
+putchar((j);
+if (i != 56 || j != 57)
 {
 putchar(','); 
 putchar(' ');
+}
 }
 }
 putchar('\n');
