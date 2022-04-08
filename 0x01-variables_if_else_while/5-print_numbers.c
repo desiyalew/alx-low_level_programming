@@ -2,17 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * 
+ * main - a simple program that ouputs the lowercase alphabet
  *
- * 6th c Alx program
+ * Return: 0 on success
  */
 int main(void)
 {
-	int i;
-	
-	for (i = 0; i < 10; i++)
-		printf("%d", i);
-	printf("\n");
-	
-	return (0);
+int i;
+
+for (i = 0; i < 10; i++)
+printf("%d", i);
+printf("\n");
+
+return (0);
 }
