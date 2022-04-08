@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * 
+ * main - entry point 
  *
- * 10th alx c program
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -20,5 +21,6 @@ int main(void)
 		}		
 	}
 	putchar('\n');
+
 	return (0);
 }
