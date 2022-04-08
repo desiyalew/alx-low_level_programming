@@ -1,25 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- *this is the 2nd program 
+ *main - a simple program to print the last digit of a number,
+ *and whether it is greater than 6, between 6 and 0, or less than zero
  *
- */
+ *Return: 0 on success
+ **/
 int main(void)
 {
 	int n;
-	int L;
-	char str[] = "Last digit of";
+
 	srand(time(0));
         n = rand() - RAND_MAX / 2;
-        L = n % 10;
-
-        if (L > 5)
-		printf("%s %d is %d and is greater than 5\n", str, n, L);
-	else if (L == 0)
-		printf("%s %d is %d and is 0\n", str, n, L);
-	else if (L < 6)
-		printf("%s %d is %d and is less than 6 and not 0\n", str, n, L);
+        printf("Last digit of ");
+        if (n % 10 > 5)
+		printf("%d is %d and is greater than 5\n", n, n % 10);
+	else if (n % 10 != 0)
+		printf("%d is %d and is less than 6 and not 0\n", n, n % 10);
+	else
+		printf("%d is %d and is 0\n", n, n % 10);
 
 	return (0);
 }
