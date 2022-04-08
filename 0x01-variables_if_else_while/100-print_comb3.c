@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
  * main - a simple program that outputs 0-9 separated by commas
  *
@@ -13,10 +12,10 @@ int j;
 
 for (i = 48; i < 57; i++)
 {
-for (j = i +1; j < 58; j++)
+for (j = i + 1; j < 58; j++)
 {
 putchar(i);
-putchar((j);
+putchar(j);
 if (i != 56 || j != 57)
 {
 putchar(','); 
