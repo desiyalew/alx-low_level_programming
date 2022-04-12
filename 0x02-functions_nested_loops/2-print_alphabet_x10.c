@@ -4,7 +4,7 @@
  * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
  * followed by a new line.
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 
 void print_alphabet_x10(void)
@@ -15,13 +15,8 @@ void print_alphabet_x10(void)
 	{
 		for (b = 97; b < 123; b++)
 		{
-			_putchar(n);
+			_putchar(b);
 		}
 	_putchar('\n');
 	}
-}
-int main()
-{
-	print_alphabet_x10();
-	return (0);
 }
