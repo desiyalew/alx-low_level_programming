@@ -1,10 +1,7 @@
 #include <stdio.h>
 /**
- * print_fib - prints the first 50 Fibonacci numbers,
- * starting with 1 and 2, followed by a new line.
- * @len: the length of with the fib sequance should print to.
- *
- * Return: void
+ * main - print the first 98 fibonacci numbers.
+ * Return: Nothing.
  */
 int main(void)
 {
@@ -20,7 +17,7 @@ int main(void)
 		k = i + j;
 		i = j;
 		j = k;
-		printf("%lu,", k);
+		printf("%lu, ", k);
 	}
 	m = i % 1000;
 	i = i / 1000;
