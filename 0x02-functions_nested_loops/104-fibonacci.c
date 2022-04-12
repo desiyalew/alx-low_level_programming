@@ -6,40 +6,43 @@
  *
  * Return: void
  */
-void print_fib(int len)
-{
-	unsigned int target, i;
-	
-	unsigned int former_l, former_r;
-	unsigned int latter_l, latter_r;
-	unsigned int fib_l, fib_r;
-
-	f = 1;
-	l = 2;
-	target = len - 2;
-	for (i = 0 ; i < target ; i++)
-	{
-		fib = f + l;
-		printf("%d : ", i + 4);
-		printf("%.0Lf" , fib);
-		f = l;
-		l = fib;
-		if (i < target - 1)
-			printf("\n");
-	}
-	putchar('\n');
-}
-
-
-/**
- * main - Entry point,
- *
- *
- * Return: Always 0 (sucess)
- */
 int main(void)
 {
-	print_fib(98);
+	int count;
+	unsigned long i, j, k;
+	unsigned long m, n, p, carry;
+
+	count = 0;
+	i = 0;
+	j = 1;
+	for (count = 1; count <= 91; count++)
+	{
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu,", k);
+	}
+	m = i % 1000;
+	i = i / 1000;
+	n = j % 1000;
+	j = j / 1000;
+	while (count <= 98)
+	{
+		carry = (m + n) / 1000;
+		p = (i + j) - carry * 1000;
+		k = (i + j) + carry;
+		m = n;
+		n = p;
+		i = j;
+		j = k;
+		if (p >= 100)
+			printf("%lu%lu", k, p);
+		else
+			printf("%lu0%lu", k, p);
+		if (count != 98)
+			printf(", ");
+		count++;
+	}
+	putchar('\n');
 	return (0);
 }
-
