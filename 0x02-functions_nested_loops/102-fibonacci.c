@@ -10,7 +10,7 @@ void print_fib_x50(void)
 {
 	unsigned int target;
 	unsigned long int f, l, i, fib;
-	
+
 	f = 1;
 	l = 2;
 	target = 50 - 2;
