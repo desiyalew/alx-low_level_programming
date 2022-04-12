@@ -1,14 +1,19 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: the character to print
+ * main - Entry point
  *
- *Return: 1 on success
+ * Return: Alway 0 (Sucess)
  */
+
 int main(void)
 {
-_putchar("_putchar");
+char *h = "Holberton\n";
+
+while (*h)
+{
+_putchar(*h);
+h++;
+											
+}
 return (0);
 }
-
