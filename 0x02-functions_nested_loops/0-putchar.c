@@ -1,15 +1,12 @@
-#include "stdio.h"
+#include "unistd.h"
 
 /**
- *main - a simple program that outputs "_putchar"
- *Return: 0 on success
+ * _putchar - writes the character c to stdout
+ * @c: the character to print
+ *
+ *Return: 1 on success
  */
-int main(void)
+int _putchar(char c)
 {
-char str[] = "_putchar\n";
-int i = 0;
-
-while (str[i] != '\0')
-_putchar(str[i++]);
-return (0);
+	return (write(1, &c, 1))
 }
