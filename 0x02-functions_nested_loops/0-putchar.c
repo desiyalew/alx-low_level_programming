@@ -6,7 +6,7 @@
  *
  *Return: 1 on success
  */
-int _putchar(char c)
+int main(void)
 {
 _putchar("_putchar");
 return (0);
