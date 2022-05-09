@@ -1,1 +1,1 @@
-README file of Alx low level programming
+this is read me of task 0x0E-structures_typedef
